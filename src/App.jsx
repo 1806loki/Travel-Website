@@ -13,10 +13,10 @@ function App() {
   return (
     <>
       <Navbar />
-      {/* <Home />
+      <Home />
       <Middle />
       <Destinations />
-      <Portfolio />
+      {/* <Portfolio />
       <Reviews />
       <Questions />
       <Subscribe />
