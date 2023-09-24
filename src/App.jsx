@@ -16,10 +16,10 @@ function App() {
       <Home />
       <Middle />
       <Destinations />
-      {/* <Portfolio />
+      <Portfolio />
       <Reviews />
       <Questions />
-      <Subscribe />
+      {/* <Subscribe />
       <Footer /> */}
     </>
   );

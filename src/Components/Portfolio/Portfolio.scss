@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --fromColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(100, 1%, 94%);
+
+  /* Font and Typography */
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 1.6rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --smallestFontSize: 0.75rem;
+  --borderRadius: 3rem;
+}
+
+.portfolio {
+  .secContainer {
+    gap: 2rem;
+    .leftContent {
+      .grid {
+        .singlePortfolio {
+          gap: 1rem;
+          align-items: center;
+
+          .iconDiv {
+            img {
+              height: 50px;
+              width: 50px;
+            }
+          }
+          .info {
+            h4 {
+              padding-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+    .rightContent {
+      img {
+        width: 100%; /* Ensure the image takes up the entire container */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 50%;
+      }
+    }
+  }
+}

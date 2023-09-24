@@ -12,10 +12,9 @@ const Navbar = () => {
     setNavBar("menu showNavbar");
   };
 
-  const removeNavbar =() => {
-    setNavBar("menu")
-
-  }
+  const removeNavbar = () => {
+    setNavBar("menu");
+  };
 
   return (
     <nav className="navBar">
@@ -30,7 +29,7 @@ const Navbar = () => {
           <li className="navList">Testimonial</li>
           <li className="navList">Gallery</li>
         </ul>
-        <CiCircleRemove className="icon closeIcon" onClick={removeNavbar}/>
+        <CiCircleRemove className="icon closeIcon" onClick={removeNavbar} />
       </div>
       <button className="signUpBtn btn">Sign Up</button>
       <PiDotsNineBold className="icon menuIcon" onClick={showNavBar} />
