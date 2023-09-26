@@ -1,18 +1,27 @@
-import Accordin from "./Accordin";
+import { useState } from "react";
+import Accordion from "./Accordion";
 import "./Questions.css";
 
-
 const Questions = () => {
+  const [active, setActive] = useState(
+    "How do I choose the right travel Destination for me ?"
+  );
+
   return (
     <div className="questions section container">
       <div className="secHeading">
         <h3>Frequently Asked Questions</h3>
       </div>
       <div className="secContainer grid">
-        <div className="accordin grid">
-          <Accordin/>
+        <div className="accordion grid">
+          <Accordion
+            title="How do I choose the right travel Destination for me ?"
+            desc=" Consider your interests, budget, trip duration, weather, activities, and safety when choosing a travel destination. Research the location and trust your instincts. Your ideal destination is unique to your preferences."
+            active={active}
+            setActive={setActive}
+          />
+        
         </div>
-
         <div className="form">
           <div className="secHeading">
             <h4>Do you have any Specific Question</h4>
