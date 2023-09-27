@@ -85,7 +85,7 @@ video {
 }
 
 .secTitle {
-  display: none;
+  display: grid;
   text-align: center;
   padding: 1rem 0;
   font-size: 25px;
@@ -93,6 +93,14 @@ video {
   color: var(--blackColor);
   flex-direction: column;
   gap: 1rem;
+}
+.secTitle p {
+  color: var(--blackColor);
+  font-size: var(--normalFontSize);
+  font-weight: 400;
+}
+.secTitle h3 {
+  font-size: var(--biggestFontSize);
 }
 
 .secHeading {
@@ -131,4 +139,14 @@ video {
   width: 10px;
   background: var(--primaryColor);
   border-radius: var(--borderRadius);
+}
+
+@media screen and (min-width: 840px) {
+  .section {
+    padding: 4rem 0.3rem;
+  }
+  .container {
+    width: 75%;
+    margin: auto;
+  }
 }/*# sourceMappingURL=App.css.map */

@@ -19,8 +19,8 @@ function App() {
       <Portfolio />
       <Reviews />
       <Questions />
-      {/* <Subscribe />
-      <Footer /> */}
+      <Subscribe />
+      <Footer />
     </>
   );
 }

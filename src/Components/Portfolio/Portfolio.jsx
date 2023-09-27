@@ -49,7 +49,7 @@ const Portfolio = () => {
                   metropolises to serene natural wonders, we've curated a
                   diverse collection of places to cater to every traveler's
                   wanderlust. Explore, experience, and embark on your next
-                  adventure with usnsure your travels are as smooth as they are
+                  adventure with unsure your travels are as smooth as they are
                   memorable.
                 </p>
               </div>

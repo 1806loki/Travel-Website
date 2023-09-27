@@ -27,6 +27,7 @@
   width: 100%;
   padding: 1.5rem 2rem;
   position: fixed;
+  background: rgba(255, 255, 255, 0.737);
   border-bottom: 1.5px solid rgb(211, 211, 211);
   -webkit-backdrop-filter: blur(5px);
           backdrop-filter: blur(5px);
@@ -91,4 +92,41 @@
 }
 .navBar .showNavbar {
   top: 8rem;
+}
+
+@media screen and (min-width: 760px) {
+  .navBar .logoDiv span {
+    font-size: var(--h2FontSize);
+  }
+  .navBar .closeIcon,
+  .navBar .menuIcon {
+    display: none;
+  }
+  .navBar .menu ul {
+    display: flex;
+    gap: 1rem;
+  }
+  .navBar .menu ul li {
+    font-size: var(--h3FontSize);
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+  }
+  .navBar .menu ul li:hover {
+    color: var(--primaryColor);
+    border-bottom: 1.5px solid var(--primaryColor);
+  }
+}
+@media screen and (min-width: 1240px) {
+  .navBar {
+    padding: 2rem 6rem;
+  }
+  .navBar .menu ul {
+    gap: 4rem;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .navBar {
+    padding: 2rem 4rem;
+  }
 }/*# sourceMappingURL=Navbar.css.map */

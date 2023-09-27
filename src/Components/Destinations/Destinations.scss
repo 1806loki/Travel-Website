@@ -33,7 +33,7 @@
   .secContainer {
     .redText {
       color: var(--primaryColor);
-      font-size: var(--smallFontSize);
+      font-size: var(--h2FontSize);
       font-weight: 500;
     }
 
@@ -67,7 +67,7 @@
         gap: 0.5rem;
         margin: auto;
         width: 100%;
-        padding: 4px 0;
+        padding: 10px 0;
         justify-content: center;
         align-items: center;
       }
@@ -157,6 +157,92 @@
             color: var(--whiteColor);
           }
         }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 520px) {
+  .destination {
+    .secContainer {
+      .searchField {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .destinationContainer {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .destination {
+    .secContainer {
+      .searchField {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .secMenu {
+        display: block;
+        .flex {
+          width: 100%;
+          margin: 2rem auto;
+          justify-content: center;
+          gap: 1rem;
+
+          li {
+            background: transparent;
+            padding: 10px 17px;
+            border-radius: var(--borderRadius);
+            color: var(--blackColor);
+            border: 1.5px dashed transparent;
+            cursor: pointer;
+
+            &:hover {
+              color: var(--primaryColor);
+              border: 1.5px dashed var(--primaryColor);
+            }
+          }
+          .active {
+            color: var(--primaryColor);
+            border: 1.5px dashed var(--primaryColor);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1148px) {
+  .destination {
+    .secContainer {
+      .destinationContainer {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .destination {
+    .secContainer {
+      .secTitle {
+        .redText {
+          font-size: var(--h1FontSize);
+        }
+
+        h3 {
+          font-size: var(--biggestFontSize);
+        }
+        p {
+          font-size: var(--h3FontSize);
+        }
+      }
+      .searchField {
+        grid-template-columns: repeat(4, 1fr);
+      }
+
+      .destinationContainer {
+        grid-template-columns: repeat(4, 1fr);
       }
     }
   }

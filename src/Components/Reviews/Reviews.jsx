@@ -3,8 +3,8 @@ import "./Reviews.css";
 import Image1 from "../../Assets/pexels-the-lost-ninja-3991665.jpg";
 import Image2 from "../../Assets/pexels-andrea-piacquadio-774909.jpg";
 import Image3 from "../../Assets/pexels-dmitry-limonov-8768460.jpg";
-import Image4 from "../../Assets/pexels-anna-shvets-3962263.jpg";
-import Image5 from "../../Assets/pexels-snow-white-1440927.jpg";
+import Image5 from "../../Assets/group.jpg";
+import Image4 from "../../Assets/pexels-snow-white-1440927.jpg";
 
 import { AiFillStar } from "react-icons/ai";
 
