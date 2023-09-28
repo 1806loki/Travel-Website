@@ -8,8 +8,15 @@ import pic4 from "../../Assets/pic4.jpg";
 
 import { AiOutlineSwapRight } from "react-icons/ai";
 
-usss
+
+import { useEffect } from "react";
+import "aos/dist/aos.css"; 
+import Aos from "aos";
+
 const Home = () => {
+  useEffect(() => {
+    Aos.init({duration:2000})
+  }, []);
   return (
     <div className="Home">
       <div className="videoBg">
@@ -17,12 +24,15 @@ const Home = () => {
       </div>
 
       <div className="sectionText">
-        <h1>RoamEase - Simplifying Your Journey,<br /> One Click at a Time</h1>
-        <p>
+        <h1 data-aos = 'fade-up'>
+          RoamEase - Simplifying Your Journey,
+          <br /> One Click at a Time
+        </h1>
+        <p data-aos = 'fade-up'>
           Explore the Worlds Most Thrilling Adventures; Life is Too Short to
           Stay Put
         </p>
-        <button className="btn flex">
+        <button className="btn flex" data-aos = 'fade-up'>
           Get Started
           <AiOutlineSwapRight className="icon" />
         </button>
