@@ -1,4 +1,8 @@
 import "./Destinations.css";
+import { useEffect } from "react";
+
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 import { MdLocationPin } from "react-icons/md";
 import { BsFillCreditCardFill } from "react-icons/bs";
@@ -75,38 +79,41 @@ const destinations = [
 ];
 
 const Destinations = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="destination section container">
       <div className="secContainer">
         <div className="secTitle">
-          <span className="redText">Explore Now</span>
-          <h3>Find Your Dream Destination</h3>
-          <p>
+          <span className="redText" data-aos="fade-up">Explore Now</span>
+          <h3 data-aos="fade-up">Find Your Dream Destination</h3>
+          <p data-aos="fade-up">
             Fill in the Fields below to find the best Spot for your Next Tour
           </p>
         </div>
         <div className="searchField grid">
-          <div className="inputField flex">
+          <div className="inputField flex" data-aos="fade-up">
             <MdLocationPin className="icon" />
             <input type="text" placeholder="Location" />
           </div>
 
-          <div className="inputField flex">
+          <div className="inputField flex" data-aos="fade-up">
             <BsFillCreditCardFill className="icon" />
             <input type="text" placeholder="Budget" />
           </div>
 
-          <div className="inputField flex">
+          <div className="inputField flex" data-aos="fade-up">
             <BsFillCalendarDateFill className="icon" />
             <input type="date" placeholder="Date" />
           </div>
 
-          <button className="btn flex">
+          <button className="btn flex" data-aos="fade-up">
             <BiSearchAlt className="icon" />
           </button>
         </div>
         <div className="secMenu">
-          <ul className="flex">
+          <ul className="flex" data-aos="fade-up">
             <li className="active">All</li>
             <li>Recommended</li>
             <li>Beach</li>
@@ -120,18 +127,18 @@ const Destinations = () => {
           {destinations.map((destination) => {
             return (
               <div className="singleDestination" key={destination.id}>
-                <div className="imgDiv">
+                <div className="imgDiv" data-aos="fade-up">
                   <img src={destination.img} alt={destination.name} />
 
-                  <div className="descInfo flex">
+                  <div className="descInfo flex" data-aos="fade-up">
                     <div className="text">
                       <span className="name">{destination.name}</span>
-                      <p className="flex">
+                      <p className="flex" data-aos="fade-up">
                         <TiLocation className="icon" />
                         {destination.location}
                       </p>
                     </div>
-                    
+
                     <span className="rating">{destination.rating}</span>
                   </div>
                 </div>
@@ -145,6 +152,3 @@ const Destinations = () => {
 };
 
 export default Destinations;
-
-
-

@@ -8,15 +8,16 @@ import pic4 from "../../Assets/pic4.jpg";
 
 import { AiOutlineSwapRight } from "react-icons/ai";
 
-
 import { useEffect } from "react";
-import "aos/dist/aos.css"; 
+import "aos/dist/aos.css";
 import Aos from "aos";
 
 const Home = () => {
+
   useEffect(() => {
-    Aos.init({duration:2000})
+    Aos.init({ duration: 2000 });
   }, []);
+
   return (
     <div className="Home">
       <div className="videoBg">
@@ -24,15 +25,15 @@ const Home = () => {
       </div>
 
       <div className="sectionText">
-        <h1 data-aos = 'fade-up'>
+        <h1 data-aos="fade-up">
           RoamEase - Simplifying Your Journey,
           <br /> One Click at a Time
         </h1>
-        <p data-aos = 'fade-up'>
+        <p data-aos="fade-up">
           Explore the Worlds Most Thrilling Adventures; Life is Too Short to
           Stay Put
         </p>
-        <button className="btn flex" data-aos = 'fade-up'>
+        <button className="btn flex" data-aos="fade-up">
           Get Started
           <AiOutlineSwapRight className="icon" />
         </button>
@@ -40,8 +41,8 @@ const Home = () => {
 
       <div className="popularPlaces">
         <div className="content">
-          <h3>Popular Places</h3>
-          <div className="images flex">
+          <h3 data-aos="fade-up">Popular Places</h3>
+          <div className="images flex" data-aos="fade-up">
             <img src={pic1} alt="Sea" />
             <img src={pic2} alt="Beach" />
             <img src={pic3} alt="Hill" />

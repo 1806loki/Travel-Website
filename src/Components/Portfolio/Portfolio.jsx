@@ -1,5 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 import "./Portfolio.css";
+import { useEffect } from "react";
+
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 import safety from "../../Assets/protection.png";
 import destination from "../../Assets/destination.png";
@@ -7,13 +11,16 @@ import customer from "../../Assets/customer-care.png";
 import travellers from "../../Assets/pexels-taryn-elliott-4840207.jpg";
 
 const Portfolio = () => {
+  useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   return (
     <div className="portfolio section container">
       <div className="secContainer grid">
         <div className="leftContent">
           <div className="secHeading">
-            <h3>Why Should you Choose us</h3>
-            <p>
+            <h3 data-aos="fade-up">Why Should you Choose us</h3>
+            <p data-aos="fade-up">
               We have got a treasure trove of wisdom and experience in the
               Travel Industry!😄🌍
             </p>
@@ -22,9 +29,9 @@ const Portfolio = () => {
           <div className="grid">
             <div className="singlePortfolio flex">
               <div className="iconDiv">
-                <img src={safety} alt="" />
+                <img data-aos="fade-up" src={safety} alt="" />
               </div>
-              <div className="info">
+              <div className="info" data-aos="fade-up">
                 <h4>Safety and Support</h4>
                 <p>
                   In the world of travel, safety and support are our guiding
@@ -39,9 +46,9 @@ const Portfolio = () => {
 
             <div className="singlePortfolio flex">
               <div className="iconDiv">
-                <img src={destination} alt="" />
+                <img data-aos="fade-up" src={destination} alt="" />
               </div>
-              <div className="info">
+              <div className="info" data-aos="fade-up">
                 <h4>World Of Possibilities</h4>
                 <p>
                   Discover a world of possibilities! Our travel website boasts
@@ -57,9 +64,9 @@ const Portfolio = () => {
 
             <div className="singlePortfolio flex">
               <div className="iconDiv">
-                <img src={customer} alt="" />
+                <img data-aos="fade-up" src={customer} alt="" />
               </div>
-              <div className="info">
+              <div className="info" data-aos="fade-up">
                 <h4>Customer-Centric Support</h4>
                 <p>
                   At RoamEase, we're dedicated to providing exceptional customer
@@ -74,7 +81,7 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-        <div className="rightContent">
+        <div className="rightContent" data-aos="fade-down">
           <img src={travellers} alt="" />
         </div>
       </div>
